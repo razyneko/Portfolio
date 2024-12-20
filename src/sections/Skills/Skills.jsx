@@ -13,38 +13,27 @@ const Skills = () => {
         <div className={styles.skillList}>
             <SkillList 
             src={checkMarkIcon}
-            skill="Python"
+            skill="Go"
             />
              <SkillList 
             src={checkMarkIcon}
-            skill="Numpy"
+            skill="JavaScript"
             />
              <SkillList 
             src={checkMarkIcon}
-            skill="Pandas"
+            skill="React"
             />
              <SkillList 
             src={checkMarkIcon}
-            skill="Matplotlib"
+            skill="API Development"
             />
              <SkillList 
             src={checkMarkIcon}
-            skill="Seaborn"
+            skill="MySQL"
             />
-        </div>
-        <hr />
-        <div className={styles.skillList}>
             <SkillList 
             src={checkMarkIcon}
-            skill="Pytorch"
-            />
-             <SkillList 
-            src={checkMarkIcon}
-            skill="Tensorflow"
-            />
-             <SkillList 
-            src={checkMarkIcon}
-            skill="Keras"
+            skill="Git/Github"
             />
         </div>
         <hr />
@@ -55,19 +44,34 @@ const Skills = () => {
             />
              <SkillList 
             src={checkMarkIcon}
-            skill="CSS"
+            skill="CSS/Tailwind"
             />
              <SkillList 
             src={checkMarkIcon}
-            skill="Javascript"
+            skill="Responsive Web Design"
+            />
+        </div>
+        <hr />
+        <div className={styles.skillList}>
+            <SkillList 
+            src={checkMarkIcon}
+            skill="Python"
             />
              <SkillList 
             src={checkMarkIcon}
-            skill="Tailwind CSS"
+            skill="Numpy"
             />
              <SkillList 
             src={checkMarkIcon}
-            skill="React.js"
+            skill="Matplotlib"
+            />
+             <SkillList 
+            src={checkMarkIcon}
+            skill="Seaborn"
+            />
+             <SkillList 
+            src={checkMarkIcon}
+            skill="Pandas"
             />
         </div>
     </section>

@@ -19,7 +19,7 @@ const Hero = () => {
     const el = useRef(null);
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['ML Engineer', 'Cloud Engineer', 'Frontend Developer'],
+            strings: ['Go', 'Javascript','React.js','Python'],
             typeSpeed: 60,
             loop: true,
             loopCount: Infinity,
@@ -53,13 +53,13 @@ const Hero = () => {
 <div className={styles.typed}><h2 ref={el}></h2>
     </div>
     <span>
-        <a target="_blank"  href="https:www.github.com/justanayush">
+        <a target="_blank"  href="https:www.github.com/razyneko">
         <img src={githubIcon} alt="github-icon" /></a>
         <a target="_blank" href="https:www.linkedin.com/in/ayvi">
         <img src={linkedinIcon} alt="linkedin-icon" /></a>
     </span>
     <p className={styles.description}>
-    Passionate about AI, ML, and cloud technologies and strengthening my frontend development skills for seamless user experiences.
+    Go developer with knowledge of JavaScript, React, and Frontend development, data science tools, beginner in DevOps.
     </p>
     <a href={resume} download>
     <button  className='text-dec hero-btn'>

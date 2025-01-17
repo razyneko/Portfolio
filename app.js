@@ -60,19 +60,20 @@ const pointer = document.querySelector('#pointer');
 function pointerFollower() {
     document.querySelector('#main').addEventListener('mousemove', (dets) => {
         gsap.to(pointer, {
-            x:dets.clientX,
-            y:dets.clientY,
+            x:dets.x,
+            y:dets.y,
             ease: "power3.out",
             duration: 1,
         })
     })
 }
 
-pointerFollower()
+pointerFollower();
 
 const projectCards = document.querySelectorAll('.project-card');
 
 for (let projectCard of projectCards){
+
     
     projectCard.addEventListener('mouseenter', () => {
         pointer.innerHTML = `<h4>VIEW</h4>`

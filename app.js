@@ -59,10 +59,37 @@ gsap.from('#skillset img', {
 const pointer = document.querySelector('#pointer');
 function pointerFollower() {
     document.querySelector('#main').addEventListener('mousemove', (dets) => {
-        const clientX = dets.clientX;
-        const clientY = dets.clientY;
-        pointer.style.transform = `translate(${clientX}px, ${clientY}px)`
+        gsap.to(pointer, {
+            x:dets.clientX,
+            y:dets.clientY,
+            ease: "power3.out",
+            duration: 1,
+        })
     })
 }
 
 pointerFollower()
+
+const projectCards = document.querySelectorAll('.project-card');
+
+for (let projectCard of projectCards){
+    
+    projectCard.addEventListener('mouseenter', () => {
+        pointer.innerHTML = `<h4>VIEW</h4>`
+        gsap.to(pointer, {
+            scale:5, 
+            duration:0.5,
+            ease:"power3.out"
+        })
+    })
+    
+    projectCard.addEventListener('mouseleave', () => {
+        pointer.innerHTML = ``
+        gsap.to(pointer, {
+            scale:1, 
+            duration: 0.5,
+            ease: "power3.out",
+        })
+    })
+}
+

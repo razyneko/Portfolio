@@ -33,6 +33,7 @@ html,body{
     justify-content: center;
     align-items: center;
     font-size: 2.5px;
+    opacity: 0;
 }
 #hero{
     height: 100vh;
@@ -151,14 +152,6 @@ html,body{
     gap: 3vw;
 }
 
-.overlay{
-    height: 160vh;
-    width: 100vw;
-    position: absolute;
-    z-index: 10;
-    background: transparent;
-    pointer-events: none;
-}
 
 #project-list .project-card{
     -webkit-box-shadow:0px 0px 107px 3px rgba(45,255,196,0.9);
@@ -175,6 +168,7 @@ html,body{
     background-color: rgb(38, 38, 38);
     overflow: hidden;
     padding: 1vw 1vw;
+    position: relative;
 }
 
 #project-list .project-card .project-details{
@@ -284,22 +278,19 @@ border-right: 1px solid rgb(113, 112, 112);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    background-color: #fff;
+    background-color: rgb(31, 29, 29);
+    color: white;
     text-decoration: none;
     margin-top: 2vh;
     width: 7vw;
     padding: 1vh;
     cursor: pointer;
     gap: 0.5vw;
-    transition: all ease-in 0.3s;
-    opacity: 0.6;
+    transition: all ease-in 0.2s;
 }
 #contact .about-me a:hover{
-    background-color: rgb(20, 20, 20);
-    color: white;
-    border: 0.5px solid white;
-
+    color: black;
+    background-color: rgb(158, 130, 130);
 }
 #contact .about img{
     border-radius: 50%;
@@ -318,3 +309,5 @@ border-right: 1px solid rgb(113, 112, 112);
     justify-content: center;
     align-items: center;
 }
+
+
